@@ -66,4 +66,14 @@ public class ProduitController {
         return "redirect:/user/index";
     }
 
+    @GetMapping("/403")
+    public String notAuthorized() {
+        return "403";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
 }
